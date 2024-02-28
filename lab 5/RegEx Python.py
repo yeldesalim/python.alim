@@ -2,54 +2,54 @@
 
 import re
 
-#Ex1
+#Ex.1
 t = input()
 a = re.search("ab*", t)
 print(a)
 
-#Ex2
+#Ex.2
 t = input()
 x = re.search(r"ab{2,3}", t)
 print(x)
 
-#Ex3
+#Ex.3
 t = input()
 x = re.findall(r"[a-z_]+_[a-z]+",t)
 print(x)
 
-#Ex4
+#Ex.4
 t = input()
 x = re.findall(r"[A-Z][a-z]+",t)
 print(x)
 
-#Ex5
+#Ex.5
 t = input()
 x = re.findall(r".*a.*b$",t)
 print(x)
 
-#Ex6
+#Ex.6
 t = input()
 x = re.sub(r"[., ]",":",t)
 print(x)
 
-#Ex7
+#Ex.7
 t = input()
 x = re.sub(r"[_]","",t)
 print(x)
 
-#Ex8
+#Ex.8
 t = input()
 x = re.findall(r"[^A-Z]*[A-Z][^A-Z]*",t)
 result = ' '.join(x)
 print(result)
 
-#Ex9
+#Ex.9
 t = input()
 x = re.findall(r"[A-Z][^A-Z]*",t)
 res = ' '.join(x)
 print(res)
 
-#Ex10
+#Ex.10
 t = input()
 x = re.sub(r"(?<!^)(?=[A-Z])","_",t).lower()
 print(x)
